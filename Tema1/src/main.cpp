@@ -7,12 +7,14 @@ int main(int argc, char *argv[]) {
 
     Movie* movie1 = new Movie("Inception", "Sci-Fi", 148);
     Movie* movie2 = new Movie("The Godfather", "Crime", 175);
+    Movie* movie3= new Movie("The Holy Mountain", "Fantasy", 113);
+    Movie *movie4=new Movie("Taste of Cherry", "Drama", 99);
     
     cinema.scheduleMovie(movie1);
     cinema.scheduleMovie(movie2);
+    cinema.scheduleMovie(movie3);
 
     cinema.showMovies();
 
-    // Destructorul va fi apelat automat la ieșirea din funcție și va elibera memoria
     return 0;
 }

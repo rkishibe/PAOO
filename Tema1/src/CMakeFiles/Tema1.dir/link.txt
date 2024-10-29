@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Tema1.dir/main.cpp.o CMakeFiles/Tema1.dir/Cinema.cpp.o CMakeFiles/Tema1.dir/Movie.cpp.o -o Tema1 

@@ -1,13 +1,13 @@
 #include "Movie.hpp"
 #include <iostream>
 
-Movie::Movie(const std::string& title, const std::string& genre, int duration)
+Movie::Movie(const std::string& title, const std::string& genre, int duration) //constructor with list initialization
     : title(title), genre(genre), duration(duration) {
-    std::cout << "Movie \"" << title << "\" created.\n";
+    std::cout << "Movie \"" << title << "\" created.\n\n";
 }
 
-Movie::~Movie() {
-    std::cout << "Movie \"" << title << "\" destroyed.\n";
+Movie::~Movie() { //destructor
+    std::cout << "Movie \"" << title << "\" destroyed.\n\n";
 }
 
 //assignment operator
@@ -20,11 +20,18 @@ Movie& Movie::operator=(const Movie& other){
     genre=other.genre;
     duration=other.duration;
 
-    std::cout<<"Movie \"" <<title << "\" assigned from "<< other.title << "\" .\n";
+    std::cout<<"Movie \"" <<title << "\" assigned from "<< other.title << "\" .\n\n";
 
     return *this;
 }
 
-std::string Movie::getTitle() const { return title; }
-std::string Movie::getGenre() const { return genre; }
-int Movie::getDuration() const { return duration; }
+std::string Movie::getTitle() const { //getters to apply the encapsulation principle
+    return title; 
+}
+
+std::string Movie::getGenre() const { 
+    return genre;
+}
+int Movie::getDuration() const { 
+    return duration; 
+}
