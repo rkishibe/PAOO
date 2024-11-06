@@ -22,5 +22,14 @@ int main(int argc, char *argv[]) {
 
     cinema.showMovies();
 
+    Cinema copiedCinema = cinema;  // copy constructor example, used to create a deep copy of 'cinema'
+    copiedCinema.scheduleMovie(std::make_shared<Movie>("The Matrix", "Sci-Fi", 136));
+    std::cout << "\nCopied Cinema Movies:\n";
+    copiedCinema.showMovies();
+
+    Cinema movedCinema = std::move(cinema); //call move constructor
+    std::cout << "\nMoved Cinema Movies:\n";
+    movedCinema.showMovies();
+
     return 0;
 }
