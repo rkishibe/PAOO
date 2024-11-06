@@ -2,12 +2,13 @@
 #include "Movie.hpp"
 #include <string>
 #include <vector>
+#include<memory>
 
 class Cinema {
-private:
+protected:
     std::string name;
     int seatCapacity;
-    std::vector<Movie*> scheduledMovies; // Vector de pointeri la filme programate
+    std::vector<std::shared_ptr<Movie>> scheduledMovies; // Vector de pointeri la filme programate
 
 public:
     Cinema(const std::string& name, int seatCapacity);
@@ -15,6 +16,6 @@ public:
 
     Cinema& operator=(const Cinema& other);
 
-    void scheduleMovie(Movie* movie);
+    void scheduleMovie(std::shared_ptr<Movie>);
     void showMovies() const;
 };

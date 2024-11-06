@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PAOO.dir/src/main.cpp.o CMakeFiles/PAOO.dir/src/Cinema.cpp.o CMakeFiles/PAOO.dir/src/Movie.cpp.o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -o PAOO 

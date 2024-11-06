@@ -1,7 +1,7 @@
 #include "Movie.hpp"
 #include <iostream>
 
-Movie::Movie(const std::string& title, const std::string& genre, int duration) //constructor with list initialization
+Movie::Movie(const std::string& title="", const std::string& genre="", int duration=0) //constructor with list initialization
     : title(title), genre(genre), duration(duration) {
     std::cout << "Movie \"" << title << "\" created.\n\n";
 }
