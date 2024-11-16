@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/vboxuser/PAOO/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/PAOO/include -g -std=gnu++17 -o CMakeFiles/PAOO.dir/src/main.cpp.o -c /home/vboxuser/PAOO/src/main.cpp",
+  "file": "/home/vboxuser/PAOO/src/main.cpp"
+},
+{
+  "directory": "/home/vboxuser/PAOO/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/PAOO/include -g -std=gnu++17 -o CMakeFiles/PAOO.dir/src/Cinema.cpp.o -c /home/vboxuser/PAOO/src/Cinema.cpp",
+  "file": "/home/vboxuser/PAOO/src/Cinema.cpp"
+},
+{
+  "directory": "/home/vboxuser/PAOO/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/PAOO/include -g -std=gnu++17 -o CMakeFiles/PAOO.dir/src/Movie.cpp.o -c /home/vboxuser/PAOO/src/Movie.cpp",
+  "file": "/home/vboxuser/PAOO/src/Movie.cpp"
+},
+{
+  "directory": "/home/vboxuser/PAOO/build",
+  "command": "/usr/bin/g++  -I/home/vboxuser/PAOO/include -g -std=gnu++17 -o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -c /home/vboxuser/PAOO/src/IMAXCinema.cpp",
+  "file": "/home/vboxuser/PAOO/src/IMAXCinema.cpp"
+}
+]

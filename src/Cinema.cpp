@@ -1,7 +1,7 @@
 #include "Cinema.hpp"
 #include <iostream>
 
-Cinema::Cinema(const std::string& name="", int seatCapacity=0) //constructor with initialization list
+Cinema::Cinema(const std::string& name, int seatCapacity) //constructor with initialization list
     : name(name), seatCapacity(seatCapacity) {
     std::cout << "Cinema \"" << name << "\" opened with " << seatCapacity << " seats.\n\n";
 }
@@ -19,6 +19,11 @@ Cinema::Cinema(const Cinema& other) //copy constructor
         scheduledMovies.push_back(std::make_shared<Movie>(*movie));
     }
     std::cout << "Copy constructor called for Cinema \"" << name << "\".\n";
+}
+
+void printCinemaDetails(Cinema cinema) { //va fi apelat copy constructorul pentru ca transmitem un obiect ca valoare
+    std::cout << "Details of cinema \"" << cinema.getName() << "\" with seat capacity: " << cinema.getSeatCapacity() << "\n";
+    cinema.showMovies();
 }
 
 
@@ -59,7 +64,7 @@ Cinema& Cinema::operator=(const Cinema& other){
 
 void Cinema::scheduleMovie(std::shared_ptr<Movie> movie) { //create movie list
     scheduledMovies.push_back(movie);
-    std::cout << "Movie \"" << movie->getTitle() << "\" scheduled at cinema \"" << name << "\".\n\n";
+    std::cout << "Movie \"" << movie->getTitle() << "\" scheduled at cinema \"" << name << "\".\n";
 }
 
 void Cinema::showMovies() const { //display movie list
@@ -68,6 +73,7 @@ void Cinema::showMovies() const { //display movie list
         std::cout << " - " << movie->getTitle() << " (" << movie->getGenre() 
                   << ", " << movie->getDuration() << " mins)\n";
     }
+    std::cout<<"\n";
 }
 
 

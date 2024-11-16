@@ -73,57 +73,57 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: CMakeFiles/PAOO.dir/flags.make
 CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp
 CMakeFiles/PAOO.dir/src/main.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PAOO.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/main.cpp.o -MF CMakeFiles/PAOO.dir/src/main.cpp.o.d -o CMakeFiles/PAOO.dir/src/main.cpp.o -c /home/vboxuser/PAOO/src/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/main.cpp.o -MF CMakeFiles/PAOO.dir/src/main.cpp.o.d -o CMakeFiles/PAOO.dir/src/main.cpp.o -c /home/vboxuser/PAOO/src/main.cpp
 
 CMakeFiles/PAOO.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/main.cpp > CMakeFiles/PAOO.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/main.cpp > CMakeFiles/PAOO.dir/src/main.cpp.i
 
 CMakeFiles/PAOO.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/main.cpp -o CMakeFiles/PAOO.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/main.cpp -o CMakeFiles/PAOO.dir/src/main.cpp.s
 
 CMakeFiles/PAOO.dir/src/Cinema.cpp.o: CMakeFiles/PAOO.dir/flags.make
 CMakeFiles/PAOO.dir/src/Cinema.cpp.o: /home/vboxuser/PAOO/src/Cinema.cpp
 CMakeFiles/PAOO.dir/src/Cinema.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PAOO.dir/src/Cinema.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/Cinema.cpp.o -MF CMakeFiles/PAOO.dir/src/Cinema.cpp.o.d -o CMakeFiles/PAOO.dir/src/Cinema.cpp.o -c /home/vboxuser/PAOO/src/Cinema.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/Cinema.cpp.o -MF CMakeFiles/PAOO.dir/src/Cinema.cpp.o.d -o CMakeFiles/PAOO.dir/src/Cinema.cpp.o -c /home/vboxuser/PAOO/src/Cinema.cpp
 
 CMakeFiles/PAOO.dir/src/Cinema.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/src/Cinema.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/Cinema.cpp > CMakeFiles/PAOO.dir/src/Cinema.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/Cinema.cpp > CMakeFiles/PAOO.dir/src/Cinema.cpp.i
 
 CMakeFiles/PAOO.dir/src/Cinema.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/src/Cinema.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/Cinema.cpp -o CMakeFiles/PAOO.dir/src/Cinema.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/Cinema.cpp -o CMakeFiles/PAOO.dir/src/Cinema.cpp.s
 
 CMakeFiles/PAOO.dir/src/Movie.cpp.o: CMakeFiles/PAOO.dir/flags.make
 CMakeFiles/PAOO.dir/src/Movie.cpp.o: /home/vboxuser/PAOO/src/Movie.cpp
 CMakeFiles/PAOO.dir/src/Movie.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PAOO.dir/src/Movie.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/Movie.cpp.o -MF CMakeFiles/PAOO.dir/src/Movie.cpp.o.d -o CMakeFiles/PAOO.dir/src/Movie.cpp.o -c /home/vboxuser/PAOO/src/Movie.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/Movie.cpp.o -MF CMakeFiles/PAOO.dir/src/Movie.cpp.o.d -o CMakeFiles/PAOO.dir/src/Movie.cpp.o -c /home/vboxuser/PAOO/src/Movie.cpp
 
 CMakeFiles/PAOO.dir/src/Movie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/src/Movie.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/Movie.cpp > CMakeFiles/PAOO.dir/src/Movie.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/Movie.cpp > CMakeFiles/PAOO.dir/src/Movie.cpp.i
 
 CMakeFiles/PAOO.dir/src/Movie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/src/Movie.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/Movie.cpp -o CMakeFiles/PAOO.dir/src/Movie.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/Movie.cpp -o CMakeFiles/PAOO.dir/src/Movie.cpp.s
 
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o: CMakeFiles/PAOO.dir/flags.make
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o: /home/vboxuser/PAOO/src/IMAXCinema.cpp
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vboxuser/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -MF CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o.d -o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -c /home/vboxuser/PAOO/src/IMAXCinema.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -MF CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o.d -o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o -c /home/vboxuser/PAOO/src/IMAXCinema.cpp
 
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/IMAXCinema.cpp > CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/PAOO/src/IMAXCinema.cpp > CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.i
 
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/IMAXCinema.cpp -o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/PAOO/src/IMAXCinema.cpp -o CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.s
 
 # Object files for target PAOO
 PAOO_OBJECTS = \

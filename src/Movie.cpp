@@ -1,13 +1,13 @@
 #include "Movie.hpp"
 #include <iostream>
 
-Movie::Movie(const std::string& title="", const std::string& genre="", int duration=0) //constructor with list initialization
+Movie::Movie(const std::string& title, const std::string& genre, int duration) //constructor with list initialization
     : title(title), genre(genre), duration(duration) {
-    std::cout << "Movie \"" << title << "\" created.\n\n";
+    std::cout << "Movie \"" << title << "\" created.\n";
 }
 
 Movie::~Movie() { //destructor
-    std::cout << "Movie \"" << title << "\" destroyed.\n\n";
+    std::cout << "Movie \"" << title << "\" destroyed.\n";
 }
 
 //assignment operator
@@ -20,7 +20,7 @@ Movie& Movie::operator=(const Movie& other){
     genre=other.genre;
     duration=other.duration;
 
-    std::cout<<"Movie \"" <<title << "\" assigned from "<< other.title << "\" .\n\n";
+    std::cout<<"Movie \"" <<title << "\" assigned from "<< other.title << "\" .\n";
 
     return *this;
 }

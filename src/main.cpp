@@ -14,18 +14,17 @@ int main(int argc, char *argv[]) {
 
     IMAXCinema imaxCinema("IMAX", 300, true);
 
+    IMAXCinema cinema2("Timis", 250); //both constructors are called
+
     imaxCinema.scheduleMovie(movie1);
+
     cinema.scheduleMovie(movie1);
     cinema.scheduleMovie(movie2);
-    cinema.scheduleMovie(movie3);
     cinema.scheduleMovie(std::make_shared<Movie>("Avatar", "Sci-Fi", 162));
 
     cinema.showMovies();
 
-    Cinema copiedCinema = cinema;  // copy constructor example, used to create a deep copy of 'cinema'
-    copiedCinema.scheduleMovie(std::make_shared<Movie>("The Matrix", "Sci-Fi", 136));
-    std::cout << "\nCopied Cinema Movies:\n";
-    copiedCinema.showMovies();
+    printCinemaDetails(cinema); //copy constructor will be called because we send an obj as value
 
     Cinema movedCinema = std::move(cinema); //call move constructor
     std::cout << "\nMoved Cinema Movies:\n";

@@ -9,7 +9,7 @@ private:
 
 public:
 //initializarea membrilor in constructor cu lista de initiliazare
-    Movie(const std::string& title, const std::string& genre, int duration); 
+    Movie(const std::string& title="", const std::string& genre="", int duration=0); 
     ~Movie();
 
     Movie& operator=(const Movie& other);
