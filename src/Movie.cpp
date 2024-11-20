@@ -1,32 +1,32 @@
 #include "Movie.hpp"
 #include <iostream>
 
-Movie::Movie(const std::string& title, const std::string& genre, int duration) //constructor with list initialization
-    : title(title), genre(genre), duration(duration) {
-    std::cout << "Movie \"" << title << "\" created.\n";
+Movie::Movie(const std::string& titleStr, const std::string& genre, int duration)
+    : title(std::make_unique<std::string>(titleStr)), genre(genre), duration(duration) {
+    std::cout << "Movie \"" << *title << "\" created.\n";
 }
 
 Movie::~Movie() { //destructor
-    std::cout << "Movie \"" << title << "\" destroyed.\n";
+    std::cout << "Movie \"" << *title << "\" destroyed.\n";
 }
 
-//assignment operator
-Movie& Movie::operator=(const Movie& other){
-    if(this==&other){
-        return *this; //checking for self assignment
+Movie::Movie(Movie&& other) noexcept
+    : title(std::move(other.title)), genre(std::move(other.genre)), duration(other.duration) {
+    std::cout << "Movie \"" << *title << "\" moved.\n";
+}
+
+Movie& Movie::operator=(Movie&& other) noexcept {
+    if (this != &other) {
+        title = std::move(other.title);
+        genre = std::move(other.genre);
+        duration = other.duration;
+        std::cout << "Movie \"" << *title << "\" move-assigned.\n";
     }
-
-    title=other.title;
-    genre=other.genre;
-    duration=other.duration;
-
-    std::cout<<"Movie \"" <<title << "\" assigned from "<< other.title << "\" .\n";
-
     return *this;
 }
 
 std::string Movie::getTitle() const { //getters to apply the encapsulation principle
-    return title; 
+    return *title; 
 }
 
 std::string Movie::getGenre() const { 

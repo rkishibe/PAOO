@@ -13,13 +13,11 @@ Cinema::~Cinema() { //destructor
     std::cout << "Cinema \"" << name << "\" closed.\n\n";
 }
 
-Cinema::Cinema(const Cinema& other) //copy constructor
-    : name(other.name), seatCapacity(other.seatCapacity) {
-    for (const auto& movie : other.scheduledMovies) {
-        scheduledMovies.push_back(std::make_shared<Movie>(*movie));
-    }
+Cinema::Cinema(const Cinema& other)
+    : name(other.name), seatCapacity(other.seatCapacity), scheduledMovies(other.scheduledMovies) {
     std::cout << "Copy constructor called for Cinema \"" << name << "\".\n";
 }
+
 
 void printCinemaDetails(Cinema cinema) { //va fi apelat copy constructorul pentru ca transmitem un obiect ca valoare
     std::cout << "Details of cinema \"" << cinema.getName() << "\" with seat capacity: " << cinema.getSeatCapacity() << "\n";
@@ -74,6 +72,39 @@ void Cinema::showMovies() const { //display movie list
                   << ", " << movie->getDuration() << " mins)\n";
     }
     std::cout<<"\n";
+}
+
+//we use a mutex in these 2 methods to lock the seat capacity so no other operations can
+//interfere with the booking causing a booking with no seats available
+bool Cinema::bookTicket() {
+    std::lock_guard<std::mutex> lock(bookingMutex);
+    if (seatCapacity > 0) {
+        --seatCapacity;
+        std::cout << "Ticket booked! Remaining seats: " << seatCapacity << "\n";
+        return true;
+    } else {
+        std::cout << "Booking failed! No seats available.\n";
+        return false;
+    }
+}
+
+
+bool Cinema::cancelTicket() {
+    std::lock_guard<std::mutex> lock(bookingMutex);
+    if (seatCapacity < seatCapacity) {
+        ++seatCapacity;
+        std::cout << "Ticket canceled! Available seats: " << seatCapacity << "\n";
+        return true;
+    } else {
+        std::cout << "Cancellation failed! All seats are already available.\n";
+        return false;
+    }
+}
+
+
+void Cinema::displayAvailability() const {
+    std::lock_guard<std::mutex> lock(bookingMutex);
+    std::cout << "Seats available in \"" << name << "\": " << seatCapacity << "\n";
 }
 
 

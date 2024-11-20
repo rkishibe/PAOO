@@ -1,21 +1,28 @@
 #pragma once
 #include <string>
+#include <memory>
+#include <iostream>
 
 class Movie {
 private:
-    std::string title;
+    std::unique_ptr<std::string> title;
+    int duration;
     std::string genre;
-    int duration; 
 
 public:
-//initializarea membrilor in constructor cu lista de initiliazare
-    Movie(const std::string& title="", const std::string& genre="", int duration=0); 
+    Movie(const std::string& title = "", const std::string& genre = "", int duration = 0);
     ~Movie();
 
-    Movie& operator=(const Movie& other);
+    //delete copy constructor and copy assignment operator
+    Movie(const Movie&) = delete;
+    Movie& operator=(const Movie&) = delete;
 
-    // gettere - incapsulare
+    Movie(Movie&& other) noexcept;
+    Movie& operator=(Movie&& other) noexcept;
+
     std::string getTitle() const;
     std::string getGenre() const;
     int getDuration() const;
+
+    void printDetails() const;
 };

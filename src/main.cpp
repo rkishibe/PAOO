@@ -13,8 +13,8 @@ int main(int argc, char *argv[]) {
     auto movie4 = std::make_shared<Movie>("Taste of Cherry", "Drama", 99);
 
     IMAXCinema imaxCinema("IMAX", 300, true);
-
     IMAXCinema cinema2("Timis", 250); //both constructors are called
+    Cinema *cinema3=new IMAXCinema("a", 100, true); //both constructors are called
 
     imaxCinema.scheduleMovie(movie1);
 
@@ -29,6 +29,30 @@ int main(int argc, char *argv[]) {
     Cinema movedCinema = std::move(cinema); //call move constructor
     std::cout << "\nMoved Cinema Movies:\n";
     movedCinema.showMovies();
+
+    Cinema cinema4("Victoria", 5);
+
+    // Book tickets
+    cinema4.bookTicket();
+    cinema4.bookTicket();
+
+    // Display availability
+    cinema4.displayAvailability();
+
+    // Cancel a ticket
+    cinema4.cancelTicket();
+
+    // Display availability again
+    cinema4.displayAvailability();
+
+    // Attempt to book all tickets
+    for (int i = 0; i < 6; ++i) {
+        cinema4.bookTicket();
+    }
+
+    // Attempt to cancel beyond capacity
+    cinema4.cancelTicket();
+    cinema4.cancelTicket();
 
     return 0;
 }

@@ -3,12 +3,14 @@
 #include <string>
 #include <vector>
 #include<memory>
+#include<mutex>
 
 class Cinema {
 protected:
     std::string name;
     int seatCapacity;
     std::vector<std::shared_ptr<Movie>> scheduledMovies; // Vector de pointeri la filme programate
+    mutable std::mutex bookingMutex; // mutex for managing ticket operations
 
 public:
     Cinema(const std::string& name="", int seatCapacity=0);
@@ -23,6 +25,10 @@ public:
 
     void scheduleMovie(std::shared_ptr<Movie>);
     void showMovies() const;
+
+    bool bookTicket();
+    bool cancelTicket();
+    void displayAvailability() const;
 
     std::string getName() const { return name; }
     int getSeatCapacity() const { return seatCapacity; }

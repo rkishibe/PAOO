@@ -139,12 +139,8 @@ CMakeFiles/PAOO.dir/src/Cinema.cpp.o: /home/vboxuser/PAOO/src/Cinema.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /usr/include/c++/12/vector \
-  /usr/include/c++/12/bits/stl_uninitialized.h \
-  /usr/include/c++/12/bits/stl_vector.h \
-  /usr/include/c++/12/bits/stl_bvector.h \
-  /usr/include/c++/12/bits/vector.tcc \
   /usr/include/c++/12/memory \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
   /usr/include/c++/12/bits/stl_tempbuf.h \
   /usr/include/c++/12/bits/stl_raw_storage_iter.h \
   /usr/include/c++/12/bits/align.h \
@@ -209,7 +205,19 @@ CMakeFiles/PAOO.dir/src/Cinema.cpp.o: /home/vboxuser/PAOO/src/Cinema.cpp \
   /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
-  /usr/include/c++/12/bits/istream.tcc
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc \
+  /usr/include/c++/12/mutex \
+  /usr/include/c++/12/bits/chrono.h \
+  /usr/include/c++/12/ratio \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/ctime \
+  /usr/include/c++/12/bits/parse_numbers.h \
+  /usr/include/c++/12/bits/std_mutex.h \
+  /usr/include/c++/12/bits/unique_lock.h
 
 CMakeFiles/PAOO.dir/src/IMAXCinema.cpp.o: /home/vboxuser/PAOO/src/IMAXCinema.cpp \
   /usr/include/stdc-predef.h \
@@ -745,12 +753,8 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /usr/include/c++/12/vector \
-  /usr/include/c++/12/bits/stl_uninitialized.h \
-  /usr/include/c++/12/bits/stl_vector.h \
-  /usr/include/c++/12/bits/stl_bvector.h \
-  /usr/include/c++/12/bits/vector.tcc \
   /usr/include/c++/12/memory \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
   /usr/include/c++/12/bits/stl_tempbuf.h \
   /usr/include/c++/12/bits/stl_raw_storage_iter.h \
   /usr/include/c++/12/bits/align.h \
@@ -792,7 +796,6 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
   /usr/include/c++/12/backward/auto_ptr.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/execution_defs.h \
-  /home/vboxuser/PAOO/include/IMAXCinema.hpp \
   /usr/include/c++/12/iostream \
   /usr/include/c++/12/ostream \
   /usr/include/c++/12/ios \
@@ -816,7 +819,20 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
   /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
-  /usr/include/c++/12/bits/istream.tcc
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/vector \
+  /usr/include/c++/12/bits/stl_vector.h \
+  /usr/include/c++/12/bits/stl_bvector.h \
+  /usr/include/c++/12/bits/vector.tcc \
+  /usr/include/c++/12/mutex \
+  /usr/include/c++/12/bits/chrono.h \
+  /usr/include/c++/12/ratio \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/ctime \
+  /usr/include/c++/12/bits/parse_numbers.h \
+  /usr/include/c++/12/bits/std_mutex.h \
+  /usr/include/c++/12/bits/unique_lock.h \
+  /home/vboxuser/PAOO/include/IMAXCinema.hpp
 
 
 /home/vboxuser/PAOO/src/Movie.cpp:
@@ -825,7 +841,27 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
 
 /home/vboxuser/PAOO/src/IMAXCinema.cpp:
 
+/usr/include/c++/12/bits/unique_lock.h:
+
+/usr/include/c++/12/bits/std_mutex.h:
+
+/usr/include/c++/12/limits:
+
+/usr/include/c++/12/bits/chrono.h:
+
+/usr/include/c++/12/bits/stl_bvector.h:
+
+/usr/include/c++/12/bits/stl_vector.h:
+
+/usr/include/c++/12/ctime:
+
 /usr/include/c++/12/bits/basic_ios.tcc:
+
+/usr/include/c++/12/vector:
+
+/usr/include/c++/12/bits/streambuf_iterator.h:
+
+/usr/include/c++/12/bits/parse_numbers.h:
 
 /usr/include/c++/12/bits/streambuf.tcc:
 
@@ -907,17 +943,9 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
 
 /usr/include/c++/12/bits/stl_tempbuf.h:
 
-/usr/include/c++/12/memory:
-
-/usr/include/c++/12/bits/stl_bvector.h:
-
-/usr/include/c++/12/bits/stl_vector.h:
-
 /usr/include/c++/12/bits/stl_uninitialized.h:
 
-/usr/include/c++/12/bits/streambuf_iterator.h:
-
-/usr/include/c++/12/vector:
+/usr/include/c++/12/memory:
 
 /usr/include/c++/12/bits/basic_string.tcc:
 
@@ -994,6 +1022,8 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
 /usr/include/c++/12/bits/cpp_type_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/c++/12/mutex:
 
 /usr/include/c++/12/new:
 
@@ -1152,6 +1182,8 @@ CMakeFiles/PAOO.dir/src/main.cpp.o: /home/vboxuser/PAOO/src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/12/bits/utility.h:
+
+/usr/include/c++/12/ratio:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
